@@ -1,0 +1,395 @@
+@import "_vars"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  /**/
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+  /**/
+  .s-container
+    width: 100%
+    margin: 0 auto
+    padding: 0 48px
+
+  header, .s-banner, .about-me, .s-relationships,
+  .s-requrements, .s-users, .s-signUp, footer
+    width: 1024px
+
+      //  -----------------------------
+      // 						BANNER
+      //  -----------------------------
+  .s-banner
+    height: 725px
+    background-size: cover
+    background-position: 0% 0%
+    background-size: 130%
+    .banner-box
+      .btn-primary
+  	    margin-top: 40px
+
+
+
+
+         // -----------------------------
+         // 					ABOUT ME
+         // -------------------------------
+  .about-me
+  	padding-top: 132px
+
+  .about-me
+    .text-box
+      margin-left: 30px
+      p:last-of-type
+        margin-bottom: 20px
+    .abm-layer
+      align-self: flex-start
+      width: 355px
+      height: 298px
+      background-size: contain
+
+          // -----------------------------
+          // 					RELATIONSHIPS
+          // -------------------------------
+
+  .s-relationships
+    height: 570px
+    h2
+      margin: 67px 0 26px 0
+      line-height: 1.22
+
+
+            // -----------------------------
+            // 					REQUREMENT
+            // -------------------------------
+  .s-requrements
+    height: 755px
+    .req-box
+      margin-top: 21px
+      .requirements-text
+        width: 54%
+    .leptop-layer
+    	margin-left: 38px
+    	width: 466px
+    	height: 425px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  /**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  /**/
+  h1
+  	font-size: 42px
+  p
+    font-size: 18px
+
+  .s-container
+    max-width: 100%
+    margin: 0 auto
+    padding: 0 24px
+
+  header, .s-banner, .about-me, .s-relationships,
+  .s-requrements, .s-users, .s-signUp, footer
+    width: 768px
+
+  header
+    nav
+      display: none
+    .blc
+      text-align: left
+      .user-data, .avatar, .sign-out
+        display: none
+      .burger-btn-container
+        display: block
+    .header-box
+  		display: flex
+  		justify-content: space-between
+
+            //  -----------------------------
+            // 						BANNER
+            //  -----------------------------
+
+  .s-banner
+    height: 622px
+    background-size: cover
+    background-position: top left
+    background-size: 125%
+
+  .banner-box
+    width: 55%
+    top: 113px
+    h1
+      line-height: 1.2
+      margin: 0 0 20px 0
+    p
+      line-height: 1.32
+  .s-banner
+    .banner-box
+      .btn-primary
+        margin-top: 34px
+
+
+          // -----------------------------
+          // 					ABOUT ME
+          // -------------------------------
+
+  .about-me
+  	padding-top: 110px
+
+  .about-me
+    .text-box
+      margin-left: 31px
+      h3
+        margin-top: 22px
+      p
+        margin-top: 10px
+        line-height: 1.38
+      p:last-of-type
+        line-height: 1.37
+        margin-bottom: 20px
+    .abm-layer
+      align-self: flex-start
+      width: 350px
+      height: 270px
+      background-size: contain
+
+
+          // -----------------------------
+          // 					RELATIONSHIPS
+          // -------------------------------
+
+  .s-relationships
+  	height: 670px
+  	h2
+  		width: 80%
+  		margin: 52px auto 20px auto
+
+  .shps-items
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    padding-left: 62px
+
+  .shps-item
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    width: 100%
+    height: 95px
+    margin: 0 0 55px 0
+    .text-box
+      width: 70%
+      p
+        margin-top: 2px
+
+  .shps-item
+    .img-box
+      margin-top: 5px
+      width: 90px
+      height: 100px
+      margin-right: 35px
+
+
+  .s-requrements
+    height: 878px
+    padding-top: 114px
+    h2
+      width: 65%
+      margin: 0 auto 0 auto
+      line-height: 1.22
+  .requirements-text
+    width: 60%
+  .leptop-layer
+  	margin-left: 15px
+  	width: 440px
+  	height: 405px
+  	background-size: contain
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  /**/
+  .s-container
+    max-width: 100%
+    margin: 0 auto
+    padding: 0 15px
+    .shps-items
+      padding-bottom: 55px
+
+  header, .s-banner, .about-me, .s-relationships,
+  .s-requrements, .s-users, .s-signUp, footer
+    width: 480px
+    h1
+      font-size: 30px
+    h2
+      font-size: 26px
+    h3
+      font-size: 22px
+
+  .s-banner, .about-me, .s-requrements
+    p
+      font-size: 16px
+      text-align: center
+
+
+
+
+    // <!-- BANNER -->
+  .s-banner
+  	height: 390px
+
+
+  .banner-box
+    width: 100%
+    top: 30px
+    text-align: center
+    padding-top: 30px
+    h1
+      text-align: center
+      margin-bottom: 30px
+
+
+
+
+      // <!-- 	ABOUT ME -->
+  .about-me
+    height: auto
+    .abm-layer
+      width: 255px
+      height: 198px
+
+  .abm-box
+    display: flex
+    flex-direction: column
+    .text-box
+      width: 100%
+      margin: 10px auto
+      h3, p, .abm-sign
+        text-align: center
+
+
+
+
+
+
+        // <!-- 	RELATIONSHIPS -->
+  .shps-item
+    display: flex
+    flex-direction: column
+    height: auto
+    margin: 20px auto
+    .img-box, .text-box
+      align-self: center
+    .text-box
+      width: 100%
+      h3, p
+        text-align: center
+  .s-relationships
+    height: auto
+
+
+
+
+        // <!-- 	REQUREMENTS -->
+  .s-requrements
+    padding-bottom: 30px
+    height: 1030px
+    .req-box
+      display: flex
+      flex-direction: column-reverse
+      align-items: center
+      padding: 0 10px
+      .requirements-text
+        width: 100%
+    .leptop-layer
+      width: 280px
+      height: 245px
+      margin: 0
+
+
+
+
+      // <!-- 	REGISTER -->
+
+  .s-signUp
+    height: auto
+
+  #signUp-frm
+    grid-template-columns: repeat(4, 22%)
+    grid-template-rows: repeat(6, 63px)
+    grid-gap: 15px
+    grid-row-gap: 30px
+
+  #btn-submit
+    grid-column-start: 1
+    grid-column-end: span 4
+    margin-top: 10px
+    padding: 8px 50px
+
+
+  .f-emeil, .f-phone, .f-name, .f-photo, .f-position
+  	grid-column-end: span 4
+
+
+
+
+        // <!-- 	FOOTER -->
+
+  footer
+    height: auto
+    padding: 20px 0
+
+
+  .footer-navigation
+    display: none
+
+
+  .logo-footer-box
+    flex-direction: column
+    align-items: center
+    height: auto
+    padding-bottom: 20px
+    nav
+      li
+        display: block
+        margin: 0 auto
+        a
+          display: block
+          line-height: 1.2
+          text-align: center
+
+
+
+  footer
+    .menu-bar
+      flex-direction: column
+      align-items: center
+      height: auto
+      a
+        text-align: center
+
+
+
+  .copiration-box
+    flex-direction: column-reverse
+    align-items: center
+    height: auto
+    margin-top: 30px
+    .soc-container
+      ul
+        display: block
+        margin: 0 auto
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
+  .s-container
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+
+
+  header, .s-banner, .about-me, .s-relationships,
+  .s-requrements, .s-users, .s-signUp, footer
+    width: 320px

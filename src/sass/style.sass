@@ -1,0 +1,752 @@
+@import "_fonts"
+@import "_libs"
+@import "_vars"
+
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+
+html, body
+	height: 100%
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	opacity: 1
+
+h1, h2, h3, h4
+	font-family: 'Overpass', sans-serif
+  font-weight: 600
+
+p, h5, a
+  font-family: 'SourceSansPro', sans-serif
+  font-weight: 400
+
+
+h1
+	font-size: 50px
+
+h2
+	font-size: 42px
+
+h3
+	font-size: 26px
+
+h4
+	font-size: 22px
+
+h5
+	font-size: 18px
+
+p
+	font-size: 20px
+
+.pr1
+	font-size: 20px
+
+.pr2
+	font-size: 16px
+
+.pr3
+	font-size: 14px
+
+
+section, header, footer
+	position: relative
+	width: 100%
+	background-size: cover
+	background-position: center
+
+.s-container
+	width: 1440px
+	margin: 0 auto
+	padding: 0 15px
+	height: 100%
+
+
+				// STYLES FOR BUTTONS
+.button
+  display: inline-block
+  text-decoration: none
+  font-family: 'SourceSansPro', sans-serif
+  font-weight: 700
+  font-size: 20px
+  color: #fff
+  line-height: 100%
+  border: 2px solid
+  padding: 8px 110px
+  border-radius: 5px
+  cursor: pointer
+
+.btn-primary
+  background-color: $primaryColor
+  border-color: $primaryColor
+  &:hover
+    background-color: #fc831f
+    border-color: #fc831f
+
+.btn-secondery
+  background-color: #fff
+  color: $primaryColor
+  border-color: $primaryColor
+  &:hover
+    color: #fc831f
+    background-color: #fee6d2
+    border-color: #fc831f
+
+.disabled
+  color: #8d8c8c
+  background-color: #d7d7d7
+  border-color: #d7d7d7
+
+
+
+
+/*-----------------------------
+
+						HEADER
+
+ -------------------------------*/
+
+header
+	height: 64px
+	background-color: #fff
+	.header-box
+		display: flex
+		justify-content: space-between
+
+
+.logo
+	text-decoration: none
+	position: relative
+	display: inline-block
+	width: 135px
+	height: 64px
+	background-image: url('../img/logo/logo.svg')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+	cursor: pointer
+
+
+nav
+	margin-left: 0
+	ul
+		list-style-type: none
+		padding: 0
+		li
+			display: inline-block
+			padding: 5px 10px
+
+			a
+				text-decoration: none
+				font-family: 'SourceSansPro'
+				font-weight: 400
+				font-size: 16px
+				color: #000
+				&:hover
+					color: $primaryColor
+			&:not(:last-child)
+				margin-right: 8px
+
+
+
+.blc
+	position: relative
+	width: 210px
+	height: 64px
+	padding-top: 12px
+
+
+
+
+.user-data
+	display: inline-block
+	width: 130px
+	padding-right: 12px
+	span
+		display: block
+		width: 100%
+		font-family: 'SourceSansPro'
+		font-size: 14px
+		text-align: right
+		overflow-x: hidden
+		text-overflow: ellipsis
+		&:last-child
+			font-size: 12px
+			color: #8d8c8c
+			margin-bottom: 5px
+
+
+
+.avatar
+	display: inline-block
+	width: 40px
+	height: 40px
+	margin: 0 0 0 2px
+	background-color: #555555
+	border-radius: 50%
+
+.sign-out
+	display: inline-block
+	width: 25px
+	height: 24px
+	margin-left: 13px
+	margin-bottom: 7px
+	background-image: url('../img/icons/sign-out.svg')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+	cursor: pointer
+	&:hover
+		opacity: 0.5
+
+.burger-btn-container
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	right: 0
+	width: 21px
+	height: 21px
+	display: none
+	background-image: url('../img/icons/line-menu.svg')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+	cursor: pointer
+
+
+
+										// MOBILE MENU
+.menu-mob
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 250px
+	height: 100vh
+	background-color: white
+	z-index: 10
+
+.mob-signIn-usr
+	width: 100%
+	height: 150px
+	padding-left: 10px
+	border-bottom: 1px solid #e1e1e1
+
+
+.mob-avatar
+	display: block
+	width: 65px
+	height: 65px
+	margin: 31px 0 14px 6px
+	background-color: #555555
+	border-radius: 50%
+
+
+.mob-usr-data
+	padding-left: 5px
+	span
+		display: block
+		max-width: 100px
+		font-family: 'SourceSansPro'
+		font-size: 20px
+	.usr-mail
+		margin-top: 4px
+		font-size: 13px
+		color: #8d8c8c
+
+.mob-navbar
+	ul
+		list-style-type: none
+		margin-top: 25px
+		padding-left: 14px
+		li
+			display: block
+			width: 100px
+			margin-bottom: 14px
+			padding: 4px 0 5px 0
+			a
+				text-decoration: none
+				font-family: 'SourceSansPro'
+				font-weight: 400
+				font-size: 16px
+				color: #000
+			&:last-child
+					margin-top: 19px
+
+
+/*-----------------------------
+
+						BANNER
+
+ -------------------------------*/
+.s-banner
+	display: block
+	height: 675px
+	background-image: url('../img/bg/bg-1.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 18% 30.5%
+	background-color: #0e1a74
+
+
+
+
+.banner-box
+	position: relative
+	top: 133px
+	width: 51%
+	text-align: left
+	padding-right: 18px
+	color: #fff
+	h1
+		line-height: 1.2
+		margin: 0 0 19px 0
+	p
+		margin: 0
+		line-height: 1.3
+	.btn-primary
+		margin-top: 34px
+
+
+
+
+/*-----------------------------
+
+						ABOUT ME
+
+ -------------------------------*/
+
+.about-me
+	height: 550px
+	padding-top: 135px
+	text-align: center
+	h2
+		margin: 0
+
+.abm-box
+	display: flex
+	position: relative
+	justify-content: space-between
+	margin-top: 15px
+
+.text-box
+	width: 750px
+	text-align: left
+	h3
+		margin-bottom: 0px
+	p
+		font-size: 16px
+		line-height: 1.4
+		margin-top: 10px
+		margin-bottom: 12px
+		color: #4c4b4b
+		&:first-of-type
+			margin-top: 4px
+			margin-bottom: 22px
+	.abm-sign
+		text-decoration: none
+		font-size: 22px
+		font-weight: 600
+		color: $primaryColor
+		cursor: pointer
+		&:hover
+			color: #fee6d2
+.abm-layer
+	width: 360px
+	height: 345px
+	background-image: url('../img/man-mobile.svg')
+	background-repeat: no-repeat
+	background-position: center
+
+
+
+/*-----------------------------
+
+						RELATIONSHIPS
+
+ -------------------------------*/
+.s-relationships
+	position: relative
+	height: 553px
+	text-align: center
+	h2
+		width: 60%
+		margin: 42px auto 20px auto
+
+.shps-items
+	display: flex
+	justify-content: flex-start
+	width: 100%
+	padding-top: 20px
+
+.shps-item
+	width: 32%
+	&:not(:last-child)
+		margin-right: 30px
+	.img-box
+		width: 100px
+		height: 110px
+		margin-bottom: 25px
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+	.text-box
+		width: 100%
+		max-height: 140px
+		h3
+			margin: 0
+		p
+			font-size: 16px
+			color: #4c4b4b
+			padding-right: 12px
+			margin-bottom: 0
+
+.shps-html
+	.img-box
+		background-image: url('../img/html.svg')
+
+.shps-css
+	.img-box
+		background-image: url('../img/css.svg')
+
+.shps-js
+	.img-box
+		background-image: url('../img/javascript.svg')
+
+
+
+
+/*-----------------------------
+
+						REQUREMENTS
+
+ -------------------------------*/
+
+.s-requrements
+	display: block
+	height: 690px
+	background-image: url('../img/bg/bg-2.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	background-color: #0e1a74
+	color: #fff
+	text-align: center
+	padding-top: 133px
+	h2
+		margin: 0
+
+.req-box
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	margin-top: 19px
+
+.requirements-text
+	width: 50%
+	height: 420px
+	text-align: left
+	p
+		font-size: 16px
+		line-height: 1.4
+		margin-bottom: 22px
+
+.leptop-layer
+	margin-left: 75px
+	width: 440px
+	height: 405px
+	display: inline-block
+	background-image: url('../img/man-laptop-v1.svg')
+	background-repeat: no-repeat
+	background-position: center
+
+
+
+
+/*-----------------------------
+
+						USERS
+
+ -------------------------------*/
+
+.s-users
+	position: relative
+	width: 100%
+	height: 680px
+	text-align: center
+	.s-container
+		padding-top: 137px
+	h2
+		margin: 0 auto 9px auto
+	h5
+		margin-top: 0
+
+.users-container
+	display: grid
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+	//grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
+	grid-gap: 10px
+  grid-auto-rows: minmax(80px, 150px)
+	grid-auto-flow: row
+	width: 100%
+	height: 380px
+	max-height: auto
+	margin-bottom: 13px
+
+
+
+
+
+/*-----------------------------
+
+						REGISTER
+
+ -------------------------------*/
+
+.s-signUp
+	position: relative
+	width: 100%
+	height: 710px
+	text-align: center
+	.s-container
+		padding-top: 135px
+	h2
+		margin: 23px auto 9px auto
+	h5
+		margin: 0
+
+#signUp-frm
+	display: grid
+	grid-template-columns: repeat(12, minmax(20px, 60px))
+	grid-template-rows: repeat(2, 63px)
+	grid-gap: 30px
+	padding-top: 56px
+	padding-bottom: 20px
+	margin: auto
+	font-family: 'SourceSansPro'
+	color: #8d8c8c
+
+	fieldset
+		position: relative
+		display: inline-block
+		height: 63px
+		border: 1px solid #b7b7b7
+		//#3a5384
+		border-radius: 3px
+		margin-bottom: 40px
+		padding: 2px 5px
+		legend
+			font-size: 12px
+			margin-left: 5px
+			text-align: left
+		input
+			height: 40px
+			width: 95%
+			border: none
+			font-family: 'SourceSansPro'
+			font-size: 16px
+			color: #8d8c8c
+			&:focus
+				outline: none
+
+
+
+input[placeholder]
+	text-overflow: ellipsis
+
+input::-moz-placeholder
+	text-overflow: ellipsis
+
+input:-moz-placeholder
+	text-overflow: ellipsis
+
+input:-ms-input-placeholder
+  text-overflow: ellipsis
+
+input[-moz-placeholder]
+	text-overflow: ellipsis
+
+
+
+.f-emeil, .f-phone, .f-name
+	grid-column-end: span 4
+
+.f-photo, .f-position
+	margin-top: 3px
+	grid-column-end: span 6
+
+#btn-submit
+	grid-column-start: 4
+	grid-column-end: span 5
+	margin-top: 35px
+	padding: 8px 50px
+
+.f-position
+	select
+		height: 55px
+		width: 100%
+		border: none
+		option
+			color: red
+			padding: 5px 0
+			height: 40px
+			width: 300px
+	label
+		display: inline-block
+		position: absolute
+		border: 2px solid $primaryColor
+
+		height: 63px
+		width: 150px
+		right: -1px
+		top: -1px
+
+.f-photo
+	label
+		display: inline-block
+		position: absolute
+		border: 2px solid $primaryColor
+		height: 63px
+		width: 150px
+		right: -1px
+		top: -1px
+		border-bottom-right-radius: 3px
+		border-top-right-radius: 3px
+		font-family: 'SourceSansPro'
+		font-weight: bold
+		font-size: 22px
+		letter-spacing: 1px
+		color: $primaryColor
+		line-height: 63px
+		cursor: pointer
+	span
+		position: absolute
+		&:first-of-type
+			top: 0
+			left: 15px
+			opacity: 0.7
+			line-height: 63px
+		&:last-of-type
+			bottom: -20px
+			left: 20px
+			font-size: 12px
+	input
+		opacity: 0
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------
+
+						FOOTER
+
+ -------------------------------*/
+
+
+
+
+footer
+	width: 100%
+	height: 313px
+	color: #fff
+	background-color: #283593
+	a
+		color: #fff
+		text-decoration: none
+		cursor: pointer
+		&:hover
+			color: $primaryColor
+	ul
+		list-style-type: none
+		margin: 0
+		li
+			display: inline-block
+
+	.navbar-connainer
+		ul
+			li
+				display: block
+				margin-top: 10px
+
+.logo-footer-box
+	display: flex
+	justify-content: space-between
+	width: 100%
+	height: 84px
+	border-bottom: 1px solid #fff
+	a
+		color: #fff
+		line-height: 64px
+
+.menu-bar
+	display: flex
+	justify-content: space-between
+	width: 100%
+	height: 150px
+	padding-top: 16px
+
+
+.footer-navigation
+	position: relative
+	width: 70%
+	height: 100%
+	ul
+		height: 100%
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		justify-content: flex-end
+		margin: 0
+		padding: 0
+		li
+			padding: 2px 0 2px 0
+			text-align: right
+			margin-bottom: 5px
+			a
+				padding: 3px 5px
+
+.copiration-box
+	position: relative
+	display: flex
+	justify-content: space-between
+
+.soc-container
+	ul
+		margin: 0
+		margin-top: 18px
+
+		li
+			width: 24px
+			height: 24px
+			vertical-align: bottom
+			font-size: 18px
+			text-align: center
+			cursor: pointer
+			background-color: white
+			border-radius: 5px
+			&:not(:last-child)
+				margin-right: 22px
+				i
+					color: #283593
+			&:hover
+				background-color: $primaryColor
+
+
+
+
+@import "_media"
