@@ -22,6 +22,7 @@ module.exports = merge(common, {
         test: /\.(sass|scss)$/,
         exclude: /(node_modules)/,
         use: [
+                'vue-style-loader',
                 'style-loader',
 
                 {
@@ -42,7 +43,8 @@ module.exports = merge(common, {
                 {
                   loader: 'sass-loader',
                   options: {
-                    sourceMap: true
+                    sourceMap: true,
+                    indentedSyntax: true
                   }
                 }
 

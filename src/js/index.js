@@ -1,5 +1,14 @@
+import Vue from "vue"
+import RegisterForm from "./RegisterForm"
 
 
+var regForm = new Vue({
+  el: '#form-container',
+  template: '<RegisterForm/>',
+  components: {
+    RegisterForm
+  }
+});
 // Механизм замены svg иконки добавленой спомощью тега img, на inline-svg чтобы
 //  была возможность менять цвет svg іконки
 

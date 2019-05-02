@@ -80,10 +80,12 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   /**/
-  h1
-  	font-size: 42px
-  p
-    font-size: 18px
+  header, .s-banner, .about-me, .s-relationships,
+  .s-requrements, .s-users, .s-signUp, footer
+    h1
+    	font-size: 42px
+    p
+      font-size: 18px
 
   .s-container
     max-width: 100%
@@ -234,11 +236,9 @@
 
 
 
-
     // <!-- BANNER -->
   .s-banner
   	height: 390px
-
 
   .banner-box
     width: 100%
@@ -271,8 +271,6 @@
 
 
 
-
-
         // <!-- 	RELATIONSHIPS -->
   .shps-item
     display: flex
@@ -287,7 +285,6 @@
         text-align: center
   .s-relationships
     height: auto
-
 
 
 
@@ -309,27 +306,10 @@
 
 
 
-
       // <!-- 	REGISTER -->
 
   .s-signUp
     height: auto
-
-  #signUp-frm
-    grid-template-columns: repeat(4, 22%)
-    grid-template-rows: repeat(6, 63px)
-    grid-gap: 15px
-    grid-row-gap: 30px
-
-  #btn-submit
-    grid-column-start: 1
-    grid-column-end: span 4
-    margin-top: 10px
-    padding: 8px 50px
-
-
-  .f-emeil, .f-phone, .f-name, .f-photo, .f-position
-  	grid-column-end: span 4
 
 
 
@@ -340,10 +320,8 @@
     height: auto
     padding: 20px 0
 
-
   .footer-navigation
     display: none
-
 
   .logo-footer-box
     flex-direction: column
@@ -360,7 +338,6 @@
           text-align: center
 
 
-
   footer
     .menu-bar
       flex-direction: column
@@ -368,8 +345,6 @@
       height: auto
       a
         text-align: center
-
-
 
   .copiration-box
     flex-direction: column-reverse
@@ -380,6 +355,8 @@
       ul
         display: block
         margin: 0 auto
+
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
